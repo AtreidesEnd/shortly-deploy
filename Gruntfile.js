@@ -68,6 +68,10 @@ module.exports = function(grunt) {
     },
 
     shell: {
+      options: {
+        stdin: true
+      },
+
       serverUpload: {
         command: 'git push live master'
       }
